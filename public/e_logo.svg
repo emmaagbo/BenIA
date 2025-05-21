@@ -1,0 +1,42 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fond du logo avec gradient subtil -->
+  <defs>
+    <linearGradient id="techGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#111827;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1F2937;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Effet de circuit imprimé -->
+    <pattern id="circuitPattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M1,20 L15,20 M25,20 L39,20 M20,1 L20,15 M20,25 L20,39" stroke="#374151" stroke-width="0.5" />
+      <circle cx="20" cy="20" r="1" fill="#374151" />
+    </pattern>
+  </defs>
+  
+  <!-- Arrière-plan avec motif technique -->
+  <rect width="200" height="200" fill="url(#techGradient)" />
+  <rect width="200" height="200" fill="url(#circuitPattern)" fill-opacity="0.15" />
+  
+  <!-- Logo E technologique -->
+  <g transform="translate(52, 40)">
+    <!-- E principal avec effet techno -->
+    <path d="M0,0 L70,0 L65,18 L20,18 L20,42 L55,42 L50,60 L20,60 L20,102 L75,102 L70,120 L0,120 Z" 
+          fill="#F97316" />
+          
+    <!-- Éléments décoratifs technologiques -->
+    <circle cx="75" cy="10" r="6" fill="#F97316" fill-opacity="0.8" />
+    <rect x="85" y="12" width="20" height="3" fill="#F97316" fill-opacity="0.6" />
+    <rect x="85" y="18" width="14" height="3" fill="#F97316" fill-opacity="0.6" />
+    
+    <!-- Éléments de circuit -->
+    <path d="M80,50 L100,50 L100,70 L95,70" stroke="#F97316" stroke-width="2" fill="none" />
+    <circle cx="95" cy="70" r="3" fill="#F97316" />
+    
+    <!-- Points lumineux -->
+    <circle cx="10" cy="60" r="2" fill="#FFFFFF" fill-opacity="0.9" />
+    <circle cx="90" cy="90" r="2" fill="#FFFFFF" fill-opacity="0.9" />
+    
+    <!-- Lignes d'énergie -->
+    <line x1="70" y1="102" x2="95" y2="85" stroke="#F97316" stroke-width="1.5" stroke-dasharray="3,2" />
+  </g>
+</svg>
