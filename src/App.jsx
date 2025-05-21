@@ -1,13 +1,12 @@
-import { useState } from 'react'
-import Chatbot from './component/Chat'
+import React from 'react';
+import Chatbot from './component/Chatbot';
 
 function App() {
-
   return (
-    <>
-     <Chatbot />
-    </>
-  )
+    <div className="App">
+      <Chatbot />
+    </div>
+  );
 }
 
-export default App
+export default App;
