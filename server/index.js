@@ -32,7 +32,7 @@ app.post('/api/chat', async (req, res) => {
         contents: [{ parts: [{ text: userMessage }] }], // Contenu de la requête pour Gemini
         generationConfig: {
           temperature: 0.4, // Contrôle la créativité de la réponse (0 à 1)
-          maxOutputTokens: 1500 // Limite la longueur de la réponse de l'IA
+          maxOutputTokens: 1000 // Limite la longueur de la réponse de l'IA
         }
       },
       {
